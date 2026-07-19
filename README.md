@@ -36,32 +36,9 @@ Akvaryum aslında bir grafik gibi çalışır:
 
 ## Nasıl çalıştırırım?
 
-Uygulama **tek dosya** olarak gelir; kurulum, yükleme, bağımlılık yoktur.
-İndir, çift tıkla ya da terminalden çalıştır. Çıkmak için **`q`** tuşuna bas.
+Uygulama **tek dosya** olarak gelir; kurulum, yükleme, bağımlılık yoktur. Terminalden çalıştır. Çıkmak için **`q`** tuşuna bas.
 
-### Yol 1 — Hazır dosyayı indir (en kolay, hiçbir şey kurmadan)
-
-1. Bu sayfanın sağındaki **Releases** bölümüne git.
-2. İşletim sistemine uygun dosyayı indir:
-   - Windows → `system-critters-windows-amd64.exe`
-   - macOS (Apple M1/M2/M3) → `system-critters-macos-arm64`
-   - macOS (Intel) → `system-critters-macos-amd64`
-   - Linux → `system-critters-linux-amd64`
-3. Çalıştır:
-
-   **Windows (PowerShell):**
-   ```powershell
-   .\system-critters-windows-amd64.exe
-   ```
-   **macOS / Linux (Terminal):**
-   ```bash
-   chmod +x ./system-critters-*        # bir kez: çalıştırma izni ver
-   ./system-critters-*
-   ```
-
-> 💡 macOS "bilinmeyen geliştirici" uyarısı verirse: dosyaya sağ tıkla → **Aç**.
-
-### Yol 2 — Kaynaktan çalıştır (Go kuruluysa)
+### Yol  — Kaynaktan çalıştır (Go kuruluysa)
 
 Bilgisayarında [Go](https://go.dev/dl/) (sürüm 1.24+) varsa:
 
