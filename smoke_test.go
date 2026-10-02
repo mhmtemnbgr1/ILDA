@@ -60,32 +60,87 @@ func TestTankRender(t *testing.T) {
 		lipgloss.NewStyle().Render(lines[6]))
 }
 
-// TestDashboardView renders a full frame and prints it so the layout can be
-// eyeballed. It also asserts the dashboard fills exactly the terminal height.
-func TestDashboardView(t *testing.T) {
+// fakeModel builds a model with plausible data and history for rendering tests.
+func fakeModel(w, h int) model {
 	m := newModel()
-	m.w, m.h, m.ready = 84, 24, true
+	m.w, m.h, m.ready = w, h, true
 	m.stats = Stats{
-		CPUPercent: 42.5, RAMPercent: 63.0,
-		RAMUsed: 9_600_000_000, RAMTotal: 16_300_000_000,
+		CPUPercent: 42.5, RAMPercent: 63.0, CoreCount: 4, Cores: []float64{10, 40, 75, 95},
+		RAMUsed: 9_600_000_000, RAMTotal: 16_300_000_000, SwapPct: 12,
 		DiskPct: 51.9, DiskUsed: 130_000_000_000, DiskTotal: 251_000_000_000,
-		NetRecvKBs: 850, NetSentKBs: 120,
-		HasTemp: false, Uptime: 250 * time.Hour, OS: "Microsoft Windows 11 Pro 25H2",
+		NetRecvKBs: 850, NetSentKBs: 120, Uptime: 250 * time.Hour,
+		OS: "Microsoft Windows 11 Pro", Hostname: "pc", CPUModel: "Test CPU", CPUFreqMHz: 3200,
+		Disks:  []DiskPart{{"C:\\", "NTFS", 51.9, 130_000_000_000, 251_000_000_000}},
+		Ifaces: []IfaceStat{{Name: "Wi-Fi", RecvKBs: 850, SentKBs: 120, IPs: []string{"192.168.1.5"}}},
+		Procs:  []ProcStat{{1, "chrome.exe", 12.5, 3.2, 500_000_000}, {2, "go.exe", 3, 1, 90_000_000}},
 	}
-	m.tank.SetStats(m.stats.CPUPercent, m.stats.RAMPercent, m.stats.NetRecvKBs+m.stats.NetSentKBs)
+	for i := 0; i < 60; i++ {
+		m.record(m.stats)
+	}
+	m.tank.SetStats(m.stats.CPUPercent, m.stats.RAMPercent, 970)
 	for i := 0; i < 25; i++ {
 		m.tank.Update(0.1)
 	}
+	return m
+}
 
-	out := m.View()
-	lines := strings.Split(out, "\n")
-	if len(lines) != 24 {
-		t.Errorf("dashboard height = %d lines, want 24", len(lines))
-	}
-	for i, ln := range lines {
-		if w := lipgloss.Width(ln); w != 84 {
-			t.Errorf("row %d display width = %d, want 84", i, w)
+// TestAllViewsFit renders every view at several terminal sizes and checks the
+// frame is exactly w x h, which is what keeps the TUI from tearing.
+func TestAllViewsFit(t *testing.T) {
+	sizes := [][2]int{{120, 36}, {84, 24}, {60, 18}, {40, 12}, {30, 8}}
+	for _, sz := range sizes {
+		for v := viewID(0); v < numViews; v++ {
+			for _, paused := range []bool{false, true} {
+				m := fakeModel(sz[0], sz[1])
+				m.view, m.paused = v, paused
+				m.toast = "test"
+				lines := strings.Split(m.View(), "\n")
+				if len(lines) != sz[1] {
+					t.Errorf("view %d @%v: %d lines, want %d", v, sz, len(lines), sz[1])
+				}
+				for i, ln := range lines {
+					if w := lipgloss.Width(ln); w != sz[0] {
+						t.Errorf("view %d @%v row %d width %d, want %d", v, sz, i, w, sz[0])
+						break
+					}
+				}
+			}
 		}
+	}
+}
+
+// TestThemes makes sure every theme renders and cycles without panicking.
+func TestThemes(t *testing.T) {
+	defer func() { th = themes[0] }()
+	for _, tm := range themes {
+		th = tm
+		m := fakeModel(100, 30)
+		m.tank.RefreshTheme()
+		if out := m.View(); out == "" {
+			t.Errorf("theme %s rendered nothing", tm.Name)
+		}
+	}
+}
+
+// TestFeedAndKeys exercises the interactive tank controls.
+func TestFeedAndKeys(t *testing.T) {
+	tank := NewTank()
+	tank.Resize(60, 12)
+	tank.SetStats(10, 50, 0)
+	n := len(tank.fish)
+	tank.AdjustFish(2)
+	if len(tank.fish) != n+2 {
+		t.Errorf("AdjustFish(2): got %d fish, want %d", len(tank.fish), n+2)
+	}
+	tank.Feed()
+	if len(tank.foods) == 0 {
+		t.Fatal("Feed dropped no food")
+	}
+	for i := 0; i < 400; i++ {
+		tank.Update(0.1)
+	}
+	if len(tank.foods) != 0 {
+		t.Errorf("food should be eaten or sunk, %d left", len(tank.foods))
 	}
 }
 

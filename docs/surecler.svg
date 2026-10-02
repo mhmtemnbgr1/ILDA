@@ -1,0 +1,174 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1018" height="624" viewBox="0 0 1018 624" font-family="'Cascadia Mono','Cascadia Code',Consolas,'DejaVu Sans Mono',monospace" font-size="15">
+<rect width="100%" height="100%" rx="10" fill="#0b0d14"/>
+<circle cx="18" cy="16" r="5.5" fill="#ff5f57"/>
+<circle cx="36" cy="16" r="5.5" fill="#febc2e"/>
+<circle cx="54" cy="16" r="5.5" fill="#28c840"/>
+<text x="14.0" y="46.0" fill="#00e5ff" font-weight="bold" textLength="18.0" lengthAdjust="spacing" xml:space="preserve">🦀</text>
+<text x="41.0" y="46.0" fill="#1fd6f8" font-weight="bold" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">S</text>
+<text x="50.0" y="46.0" fill="#2fcef3" font-weight="bold" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">Y</text>
+<text x="59.0" y="46.0" fill="#3fc7f1" font-weight="bold" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">S</text>
+<text x="68.0" y="46.0" fill="#4fbfed" font-weight="bold" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">T</text>
+<text x="77.0" y="46.0" fill="#5fb8ea" font-weight="bold" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">E</text>
+<text x="86.0" y="46.0" fill="#6fb0e6" font-weight="bold" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">M</text>
+<text x="95.0" y="46.0" fill="#7fa9e3" font-weight="bold" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">-</text>
+<text x="104.0" y="46.0" fill="#8fa2df" font-weight="bold" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">C</text>
+<text x="113.0" y="46.0" fill="#9f9adc" font-weight="bold" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">R</text>
+<text x="122.0" y="46.0" fill="#af93d8" font-weight="bold" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">I</text>
+<text x="131.0" y="46.0" fill="#bf8bd5" font-weight="bold" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">T</text>
+<text x="140.0" y="46.0" fill="#cf83d1" font-weight="bold" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">T</text>
+<text x="149.0" y="46.0" fill="#df7cce" font-weight="bold" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">E</text>
+<text x="158.0" y="46.0" fill="#ef75ca" font-weight="bold" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">R</text>
+<text x="167.0" y="46.0" fill="#ff6ec7" font-weight="bold" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">S</text>
+<rect x="185.0" y="32.0" width="81.5" height="19.5" fill="#4cf0a0"/>
+<text x="185.0" y="46.0" fill="#06222f" font-weight="bold" textLength="81.0" lengthAdjust="spacing" xml:space="preserve"> ● SAKİN </text>
+<text x="617.0" y="46.0" fill="#8aa0b8" textLength="207.0" lengthAdjust="spacing" xml:space="preserve">demo-pc · Demo OS 11 · </text>
+<text x="824.0" y="46.0" fill="#e6f1ff" textLength="81.0" lengthAdjust="spacing" xml:space="preserve">up 2g 4sa</text>
+<text x="905.0" y="46.0" fill="#8aa0b8" textLength="27.0" lengthAdjust="spacing" xml:space="preserve"> · </text>
+<text x="932.0" y="46.0" fill="#e6f1ff" textLength="72.0" lengthAdjust="spacing" xml:space="preserve">15:22:26</text>
+<text x="14.0" y="65.0" fill="#8aa0b8" textLength="90.0" lengthAdjust="spacing" xml:space="preserve"> 1 Genel │</text>
+<rect x="104.0" y="51.0" width="108.5" height="19.5" fill="#00e5ff"/>
+<text x="104.0" y="65.0" fill="#06222f" font-weight="bold" textLength="108.0" lengthAdjust="spacing" xml:space="preserve"> 2 Süreçler </text>
+<text x="212.0" y="65.0" fill="#8aa0b8" textLength="243.0" lengthAdjust="spacing" xml:space="preserve">│ 3 Ağ │ 4 Disk │ 5 Sistem </text>
+<text x="14.0" y="84.0" fill="#2f7f9e" textLength="27.0" lengthAdjust="spacing" xml:space="preserve">╭─ </text>
+<text x="41.0" y="84.0" fill="#d8dee9" textLength="27.0" lengthAdjust="spacing" xml:space="preserve">📋 </text>
+<text x="68.0" y="84.0" fill="#e6f1ff" font-weight="bold" textLength="72.0" lengthAdjust="spacing" xml:space="preserve">Süreçler</text>
+<text x="140.0" y="84.0" fill="#2f7f9e" textLength="864.0" lengthAdjust="spacing" xml:space="preserve"> ──────────────────────────────────────────────────────────────────────────────────────────────╮</text>
+<text x="14.0" y="103.0" fill="#2f7f9e" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">│</text>
+<text x="32.0" y="103.0" fill="#8aa0b8" textLength="63.0" lengthAdjust="spacing" xml:space="preserve">    PID</text>
+<text x="104.0" y="103.0" fill="#8aa0b8" textLength="558.0" lengthAdjust="spacing" xml:space="preserve">İSİM                                                          </text>
+<text x="671.0" y="103.0" fill="#00e5ff" font-weight="bold" textLength="54.0" lengthAdjust="spacing" xml:space="preserve">  CPU▼</text>
+<text x="833.0" y="103.0" fill="#8aa0b8" textLength="90.0" lengthAdjust="spacing" xml:space="preserve">    BELLEK</text>
+<text x="932.0" y="103.0" fill="#8aa0b8" textLength="54.0" lengthAdjust="spacing" xml:space="preserve">  BEL%</text>
+<text x="995.0" y="103.0" fill="#2f7f9e" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">│</text>
+<text x="14.0" y="122.0" fill="#2f7f9e" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">│</text>
+<text x="32.0" y="122.0" fill="#8aa0b8" textLength="63.0" lengthAdjust="spacing" xml:space="preserve">   4120</text>
+<text x="104.0" y="122.0" fill="#e6f1ff" textLength="558.0" lengthAdjust="spacing" xml:space="preserve">browser                                                       </text>
+<text x="671.0" y="122.0" fill="#4cf0a0" font-weight="bold" textLength="54.0" lengthAdjust="spacing" xml:space="preserve">  9.4%</text>
+<text x="734.0" y="122.0" fill="#4cf0a0" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">█</text>
+<text x="743.0" y="122.0" fill="#69ea96" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">▉</text>
+<text x="752.0" y="122.0" fill="#344e5e" textLength="72.0" lengthAdjust="spacing" xml:space="preserve">░░░░░░░░</text>
+<text x="833.0" y="122.0" fill="#e6f1ff" textLength="90.0" lengthAdjust="spacing" xml:space="preserve"> 619.9 MiB</text>
+<text x="932.0" y="122.0" fill="#8aa0b8" textLength="54.0" lengthAdjust="spacing" xml:space="preserve">  4.1%</text>
+<text x="995.0" y="122.0" fill="#2f7f9e" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">│</text>
+<text x="14.0" y="141.0" fill="#2f7f9e" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">│</text>
+<text x="32.0" y="141.0" fill="#8aa0b8" textLength="63.0" lengthAdjust="spacing" xml:space="preserve">   2210</text>
+<text x="104.0" y="141.0" fill="#e6f1ff" textLength="558.0" lengthAdjust="spacing" xml:space="preserve">code-editor                                                   </text>
+<text x="671.0" y="141.0" fill="#4cf0a0" font-weight="bold" textLength="54.0" lengthAdjust="spacing" xml:space="preserve">  6.1%</text>
+<text x="734.0" y="141.0" fill="#4cf0a0" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">█</text>
+<text x="743.0" y="141.0" fill="#69ea96" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">▎</text>
+<text x="752.0" y="141.0" fill="#344e5e" textLength="72.0" lengthAdjust="spacing" xml:space="preserve">░░░░░░░░</text>
+<text x="833.0" y="141.0" fill="#e6f1ff" textLength="90.0" lengthAdjust="spacing" xml:space="preserve"> 495.9 MiB</text>
+<text x="932.0" y="141.0" fill="#8aa0b8" textLength="54.0" lengthAdjust="spacing" xml:space="preserve">  3.2%</text>
+<text x="995.0" y="141.0" fill="#2f7f9e" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">│</text>
+<text x="14.0" y="160.0" fill="#2f7f9e" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">│</text>
+<text x="32.0" y="160.0" fill="#8aa0b8" textLength="63.0" lengthAdjust="spacing" xml:space="preserve">    880</text>
+<text x="104.0" y="160.0" fill="#e6f1ff" textLength="558.0" lengthAdjust="spacing" xml:space="preserve">game-launcher                                                 </text>
+<text x="671.0" y="160.0" fill="#4cf0a0" font-weight="bold" textLength="54.0" lengthAdjust="spacing" xml:space="preserve">  3.8%</text>
+<text x="734.0" y="160.0" fill="#4cf0a0" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">▊</text>
+<text x="743.0" y="160.0" fill="#344e5e" textLength="81.0" lengthAdjust="spacing" xml:space="preserve">░░░░░░░░░</text>
+<text x="833.0" y="160.0" fill="#e6f1ff" textLength="90.0" lengthAdjust="spacing" xml:space="preserve"> 362.4 MiB</text>
+<text x="932.0" y="160.0" fill="#8aa0b8" textLength="54.0" lengthAdjust="spacing" xml:space="preserve">  2.4%</text>
+<text x="995.0" y="160.0" fill="#2f7f9e" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">│</text>
+<text x="14.0" y="179.0" fill="#2f7f9e" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">│</text>
+<text x="32.0" y="179.0" fill="#8aa0b8" textLength="63.0" lengthAdjust="spacing" xml:space="preserve">   3340</text>
+<text x="104.0" y="179.0" fill="#e6f1ff" textLength="558.0" lengthAdjust="spacing" xml:space="preserve">music-player                                                  </text>
+<text x="671.0" y="179.0" fill="#4cf0a0" font-weight="bold" textLength="54.0" lengthAdjust="spacing" xml:space="preserve">  2.2%</text>
+<text x="734.0" y="179.0" fill="#4cf0a0" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">▌</text>
+<text x="743.0" y="179.0" fill="#344e5e" textLength="81.0" lengthAdjust="spacing" xml:space="preserve">░░░░░░░░░</text>
+<text x="833.0" y="179.0" fill="#e6f1ff" textLength="90.0" lengthAdjust="spacing" xml:space="preserve"> 162.1 MiB</text>
+<text x="932.0" y="179.0" fill="#8aa0b8" textLength="54.0" lengthAdjust="spacing" xml:space="preserve">  1.1%</text>
+<text x="995.0" y="179.0" fill="#2f7f9e" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">│</text>
+<text x="14.0" y="198.0" fill="#2f7f9e" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">│</text>
+<text x="32.0" y="198.0" fill="#8aa0b8" textLength="63.0" lengthAdjust="spacing" xml:space="preserve">   1500</text>
+<text x="104.0" y="198.0" fill="#e6f1ff" textLength="558.0" lengthAdjust="spacing" xml:space="preserve">terminal                                                      </text>
+<text x="671.0" y="198.0" fill="#4cf0a0" font-weight="bold" textLength="54.0" lengthAdjust="spacing" xml:space="preserve">  1.4%</text>
+<text x="734.0" y="198.0" fill="#4cf0a0" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">▎</text>
+<text x="743.0" y="198.0" fill="#344e5e" textLength="81.0" lengthAdjust="spacing" xml:space="preserve">░░░░░░░░░</text>
+<text x="833.0" y="198.0" fill="#e6f1ff" textLength="90.0" lengthAdjust="spacing" xml:space="preserve">  90.6 MiB</text>
+<text x="932.0" y="198.0" fill="#8aa0b8" textLength="54.0" lengthAdjust="spacing" xml:space="preserve">  0.6%</text>
+<text x="995.0" y="198.0" fill="#2f7f9e" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">│</text>
+<text x="14.0" y="217.0" fill="#2f7f9e" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">│</text>
+<text x="32.0" y="217.0" fill="#8aa0b8" textLength="63.0" lengthAdjust="spacing" xml:space="preserve">    720</text>
+<text x="104.0" y="217.0" fill="#e6f1ff" textLength="558.0" lengthAdjust="spacing" xml:space="preserve">system                                                        </text>
+<text x="671.0" y="217.0" fill="#4cf0a0" font-weight="bold" textLength="54.0" lengthAdjust="spacing" xml:space="preserve">  1.1%</text>
+<text x="734.0" y="217.0" fill="#4cf0a0" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">▎</text>
+<text x="743.0" y="217.0" fill="#344e5e" textLength="81.0" lengthAdjust="spacing" xml:space="preserve">░░░░░░░░░</text>
+<text x="833.0" y="217.0" fill="#e6f1ff" textLength="90.0" lengthAdjust="spacing" xml:space="preserve">  45.8 MiB</text>
+<text x="932.0" y="217.0" fill="#8aa0b8" textLength="54.0" lengthAdjust="spacing" xml:space="preserve">  0.3%</text>
+<text x="995.0" y="217.0" fill="#2f7f9e" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">│</text>
+<text x="14.0" y="236.0" fill="#2f7f9e" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">│</text>
+<text x="32.0" y="236.0" fill="#8aa0b8" textLength="63.0" lengthAdjust="spacing" xml:space="preserve">   5012</text>
+<text x="104.0" y="236.0" fill="#e6f1ff" textLength="558.0" lengthAdjust="spacing" xml:space="preserve">chat-app                                                      </text>
+<text x="671.0" y="236.0" fill="#4cf0a0" font-weight="bold" textLength="54.0" lengthAdjust="spacing" xml:space="preserve">  0.9%</text>
+<text x="734.0" y="236.0" fill="#4cf0a0" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">▏</text>
+<text x="743.0" y="236.0" fill="#344e5e" textLength="81.0" lengthAdjust="spacing" xml:space="preserve">░░░░░░░░░</text>
+<text x="833.0" y="236.0" fill="#e6f1ff" textLength="90.0" lengthAdjust="spacing" xml:space="preserve"> 276.6 MiB</text>
+<text x="932.0" y="236.0" fill="#8aa0b8" textLength="54.0" lengthAdjust="spacing" xml:space="preserve">  1.8%</text>
+<text x="995.0" y="236.0" fill="#2f7f9e" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">│</text>
+<text x="14.0" y="255.0" fill="#2f7f9e" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">│</text>
+<text x="32.0" y="255.0" fill="#8aa0b8" textLength="63.0" lengthAdjust="spacing" xml:space="preserve">    990</text>
+<text x="104.0" y="255.0" fill="#e6f1ff" textLength="558.0" lengthAdjust="spacing" xml:space="preserve">backup-agent                                                  </text>
+<text x="671.0" y="255.0" fill="#4cf0a0" font-weight="bold" textLength="54.0" lengthAdjust="spacing" xml:space="preserve">  0.4%</text>
+<text x="734.0" y="255.0" fill="#4cf0a0" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">▏</text>
+<text x="743.0" y="255.0" fill="#344e5e" textLength="81.0" lengthAdjust="spacing" xml:space="preserve">░░░░░░░░░</text>
+<text x="833.0" y="255.0" fill="#e6f1ff" textLength="90.0" lengthAdjust="spacing" xml:space="preserve">  76.3 MiB</text>
+<text x="932.0" y="255.0" fill="#8aa0b8" textLength="54.0" lengthAdjust="spacing" xml:space="preserve">  0.5%</text>
+<text x="995.0" y="255.0" fill="#2f7f9e" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">│</text>
+<text x="14.0" y="274.0" fill="#2f7f9e" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">│</text>
+<text x="995.0" y="274.0" fill="#2f7f9e" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">│</text>
+<text x="14.0" y="293.0" fill="#2f7f9e" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">│</text>
+<text x="995.0" y="293.0" fill="#2f7f9e" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">│</text>
+<text x="14.0" y="312.0" fill="#2f7f9e" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">│</text>
+<text x="995.0" y="312.0" fill="#2f7f9e" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">│</text>
+<text x="14.0" y="331.0" fill="#2f7f9e" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">│</text>
+<text x="995.0" y="331.0" fill="#2f7f9e" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">│</text>
+<text x="14.0" y="350.0" fill="#2f7f9e" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">│</text>
+<text x="995.0" y="350.0" fill="#2f7f9e" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">│</text>
+<text x="14.0" y="369.0" fill="#2f7f9e" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">│</text>
+<text x="995.0" y="369.0" fill="#2f7f9e" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">│</text>
+<text x="14.0" y="388.0" fill="#2f7f9e" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">│</text>
+<text x="995.0" y="388.0" fill="#2f7f9e" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">│</text>
+<text x="14.0" y="407.0" fill="#2f7f9e" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">│</text>
+<text x="995.0" y="407.0" fill="#2f7f9e" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">│</text>
+<text x="14.0" y="426.0" fill="#2f7f9e" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">│</text>
+<text x="995.0" y="426.0" fill="#2f7f9e" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">│</text>
+<text x="14.0" y="445.0" fill="#2f7f9e" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">│</text>
+<text x="995.0" y="445.0" fill="#2f7f9e" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">│</text>
+<text x="14.0" y="464.0" fill="#2f7f9e" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">│</text>
+<text x="995.0" y="464.0" fill="#2f7f9e" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">│</text>
+<text x="14.0" y="483.0" fill="#2f7f9e" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">│</text>
+<text x="995.0" y="483.0" fill="#2f7f9e" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">│</text>
+<text x="14.0" y="502.0" fill="#2f7f9e" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">│</text>
+<text x="995.0" y="502.0" fill="#2f7f9e" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">│</text>
+<text x="14.0" y="521.0" fill="#2f7f9e" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">│</text>
+<text x="995.0" y="521.0" fill="#2f7f9e" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">│</text>
+<text x="14.0" y="540.0" fill="#2f7f9e" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">│</text>
+<text x="995.0" y="540.0" fill="#2f7f9e" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">│</text>
+<text x="14.0" y="559.0" fill="#2f7f9e" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">│</text>
+<text x="32.0" y="559.0" fill="#8aa0b8" textLength="180.0" lengthAdjust="spacing" xml:space="preserve">8 süreç · sıralama: </text>
+<text x="212.0" y="559.0" fill="#00e5ff" font-weight="bold" textLength="27.0" lengthAdjust="spacing" xml:space="preserve">CPU</text>
+<text x="239.0" y="559.0" fill="#8aa0b8" textLength="171.0" lengthAdjust="spacing" xml:space="preserve"> · 1–8 gösteriliyor</text>
+<text x="995.0" y="559.0" fill="#2f7f9e" textLength="9.0" lengthAdjust="spacing" xml:space="preserve">│</text>
+<text x="14.0" y="578.0" fill="#2f7f9e" textLength="990.0" lengthAdjust="spacing" xml:space="preserve">╰────────────────────────────────────────────────────────────────────────────────────────────────────────────╯</text>
+<rect x="14.0" y="583.0" width="27.5" height="19.5" fill="#00e5ff"/>
+<text x="14.0" y="597.0" fill="#06222f" font-weight="bold" textLength="27.0" lengthAdjust="spacing" xml:space="preserve"> q </text>
+<text x="50.0" y="597.0" fill="#8aa0b8" textLength="45.0" lengthAdjust="spacing" xml:space="preserve">çıkış</text>
+<rect x="113.0" y="583.0" width="45.5" height="19.5" fill="#00e5ff"/>
+<text x="113.0" y="597.0" fill="#06222f" font-weight="bold" textLength="45.0" lengthAdjust="spacing" xml:space="preserve"> Tab </text>
+<text x="167.0" y="597.0" fill="#8aa0b8" textLength="45.0" lengthAdjust="spacing" xml:space="preserve">sekme</text>
+<rect x="230.0" y="583.0" width="27.5" height="19.5" fill="#00e5ff"/>
+<text x="230.0" y="597.0" fill="#06222f" font-weight="bold" textLength="27.0" lengthAdjust="spacing" xml:space="preserve"> t </text>
+<text x="266.0" y="597.0" fill="#8aa0b8" textLength="36.0" lengthAdjust="spacing" xml:space="preserve">tema</text>
+<rect x="320.0" y="583.0" width="27.5" height="19.5" fill="#00e5ff"/>
+<text x="320.0" y="597.0" fill="#06222f" font-weight="bold" textLength="27.0" lengthAdjust="spacing" xml:space="preserve"> p </text>
+<text x="356.0" y="597.0" fill="#8aa0b8" textLength="72.0" lengthAdjust="spacing" xml:space="preserve">duraklat</text>
+<rect x="446.0" y="583.0" width="27.5" height="19.5" fill="#00e5ff"/>
+<text x="446.0" y="597.0" fill="#06222f" font-weight="bold" textLength="27.0" lengthAdjust="spacing" xml:space="preserve"> e </text>
+<text x="482.0" y="597.0" fill="#8aa0b8" textLength="54.0" lengthAdjust="spacing" xml:space="preserve">kaydet</text>
+<rect x="554.0" y="583.0" width="27.5" height="19.5" fill="#00e5ff"/>
+<text x="554.0" y="597.0" fill="#06222f" font-weight="bold" textLength="27.0" lengthAdjust="spacing" xml:space="preserve"> s </text>
+<text x="590.0" y="597.0" fill="#8aa0b8" textLength="54.0" lengthAdjust="spacing" xml:space="preserve">sırala</text>
+<rect x="662.0" y="583.0" width="45.5" height="19.5" fill="#00e5ff"/>
+<text x="662.0" y="597.0" fill="#06222f" font-weight="bold" textLength="45.0" lengthAdjust="spacing" xml:space="preserve"> j/k </text>
+<text x="716.0" y="597.0" fill="#8aa0b8" textLength="54.0" lengthAdjust="spacing" xml:space="preserve">kaydır</text>
+</svg>

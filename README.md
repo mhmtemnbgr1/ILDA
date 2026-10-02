@@ -1,105 +1,136 @@
 # 🦀 system-critters
 
-Terminalinde çalışan minik bir **sistem monitörü**. Bilgisayarının CPU, RAM,
-disk ve ağ durumunu canlı gösterir; en altta ise küçük ASCII balıkların yüzdüğü
-bir **akvaryum** vardır. En güzel yanı: balıklar rastgele yüzmez, bilgisayarının
-o anki durumuna göre davranır.
+Terminalinde çalışan renkli bir **sistem monitörü**. CPU, RAM, disk, ağ, süreçler,
+GPU ve pil durumunu canlı gösterir; en altta ise bilgisayarının ruh haline göre
+davranan küçük bir **akvaryum** yüzer.
 
-```
-🦀 system-critters                         ⏱ 10d 11h · Windows 11 Pro
-CPU  ██████████░░░░░░░░░░░░░░░  28.8%   TEMP 54°C
-RAM  ████████████████░░░░░░░░░  56.0%   8.6 GiB / 15.2 GiB
-DISK █████████████░░░░░░░░░░░░  51.9%   121 GiB / 234 GiB
-NET  ↓ 850 KiB/s   ↑ 120 KiB/s
-╭─────────────────────────────────────────────────────────────╮
-│              ><(((º>                                         │
-│  <><                        ><>                              │
-│         ><(((º>                          °                   │
-│                    <º)))><          °                        │
-│       (   (                                    (             │
-│▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒│
-╰─────────────────────────────────────────────────────────────╯
-q ile çık  ·  balık hızı = CPU  ·  sürü = RAM  ·  baloncuk = ağ
-```
+## Ne yapar?
 
-## Balıklar ne anlatıyor?
+Tek bakışta bilgisayarının sağlığını gösterir: **CPU, RAM, disk, ağ, süreçler,
+GPU ve pil** — hepsi canlı grafikler ve gradyanlı göstergelerle. Alt kısımdaki
+akvaryum sistem durumuna tepki verir (CPU ↑ balıklar hızlanır, RAM ↑ sürü büyür,
+ağ trafiği ↑ baloncuk artar). 5 sekme, 4 tema, yemleme/duraklatma gibi
+kısayollar ve ayar dosyası içerir.
 
-Akvaryum aslında bir grafik gibi çalışır:
+![Genel görünüm](docs/genel.svg)
+
+<details>
+<summary>Daha fazla ekran görüntüsü</summary>
+
+**Neon tema**
+
+![Neon tema](docs/neon.svg)
+
+**Süreçler**
+
+![Süreçler](docs/surecler.svg)
+
+**Ağ**
+
+![Ağ](docs/ag.svg)
+
+**Sistem**
+
+![Sistem](docs/sistem.svg)
+
+</details>
+
+## Akvaryum ne anlatıyor?
 
 | Gördüğün şey | Anlamı |
 |--------------|--------|
-| 🐟 Balıklar hızlı yüzüyor | CPU (işlemci) çok çalışıyor |
-| 🐌 Balıklar yavaş / uykulu | Bilgisayar boşta |
-| 🐠 Akvaryum kalabalık | RAM (bellek) dolu |
+| 🐟 Balıklar hızlı yüzüyor | CPU çok çalışıyor |
+| 🐌 Balıklar yavaş | Bilgisayar boşta |
+| 🐠 Akvaryum kalabalık | RAM dolu |
 | 🫧 Bol baloncuk | Ağdan çok veri iniyor/gidiyor |
-| 🔴 Balıklar kırmızıya döndü | CPU %85'i geçti, sistem zorlanıyor |
+| 🦀 Yengeç koşturuyor | CPU yükü yüksek |
+| 🔴 Balıklar kırmızı | CPU %85'i geçti |
+| ♥ Mutluluk | Sistem sakinse yükselir, zorlanınca düşer; balıkları yemleyince artar |
 
 ## Nasıl çalıştırırım?
 
-Uygulama **tek dosya** olarak gelir; kurulum, yükleme, bağımlılık yoktur. Terminalden çalıştır. Çıkmak için **`q`** tuşuna bas.
-
-### Yol  — Kaynaktan çalıştır (Go kuruluysa)
-
-Bilgisayarında [Go](https://go.dev/dl/) (sürüm 1.24+) varsa:
+Bilgisayarında [Go](https://go.dev/dl/) (1.24+) varsa:
 
 ```bash
-git clone https://github.com/<kullanici-adin>/system-critters.git
-cd system-critters
+git clone https://github.com/mhmtemnbgr1/ILDA.git
+cd ILDA
 go run .
 ```
 
-## Neler gösteriliyor?
+## Sekmeler
 
-| Ölçüm | Açıklama |
-|-------|----------|
-| **CPU** | İşlemci kullanımı (%) |
-| **RAM** | Kullanılan / toplam bellek |
-| **DISK** | Ana diskin doluluğu |
-| **NET** | Anlık indirme (↓) ve yükleme (↑) hızı |
-| **TEMP** | CPU sıcaklığı — *okunabiliyorsa* |
-| **Uptime / OS** | Üst satırda: açık kalma süresi ve işletim sistemi |
+| Sekme | İçerik |
+|-------|--------|
+| **1 Genel** | CPU/RAM/Disk/Ağ kartları (gradyanlı göstergeler + son dakikaların sparkline grafiği), uyarı bandı, akvaryum |
+| **2 Süreçler** | CPU / bellek / PID / isme göre sıralanabilir süreç tablosu |
+| **3 Ağ** | İndirme/yükleme grafikleri, arayüz tablosu (hız, toplam veri, IP), arayüz seçimi |
+| **4 Disk** | Tüm bölümler ve doluluk, okuma/yazma hızı grafikleri |
+| **5 Sistem** | Çekirdek başına yük, CPU modeli/frekansı, swap, yük ortalaması, NVIDIA GPU, pil, CPU geçmişi |
 
-> ⚠️ **Sıcaklık neden bazen `N/A`?**
-> CPU sıcaklığı her bilgisayarda okunamaz. Linux'ta genelde çalışır; **Windows'ta
-> çoğu makinede ekstra sürücü olmadan boş gelir**, macOS'ta yönetici izni ister.
-> Okunamadığında uygulama çökmez, sadece `N/A` yazar. Bu normaldir.
+> ⚠️ **Sıcaklık bazen `N/A`:** CPU sıcaklığı her makinede okunamaz (Windows'ta
+> çoğu zaman ekstra sürücü gerekir). Uygulama çökmez, `N/A` yazar. GPU bilgisi
+> için `nvidia-smi` gerekir; yoksa "NVIDIA bulunamadı" görünür.
 
 ## Kısayollar
 
 | Tuş | İşlev |
 |-----|-------|
-| `q` | çıkış |
-| `Esc` veya `Ctrl+C` | çıkış |
+| `Tab` / `Shift+Tab` / `←` `→` / `1`–`5` | sekme değiştir |
+| `t` | tema değiştir (Okyanus · Neon · Retro · Şeker) — seçim kaydedilir |
+| `p` / `Space` | duraklat / devam |
+| `f` | balıkları yemle |
+| `+` / `-` | balık sayısını artır / azalt |
+| `s` | süreçleri sırala (CPU → Bellek → PID → İsim) |
+| `j` `k` / `↑` `↓` / `PgUp` `PgDn` | süreç listesinde kaydır |
+| `n` | ağ arayüzü seç (Ağ sekmesi) |
+| `e` | anlık durumu `system-critters-<tarih>.json` olarak kaydet |
+| `q` / `Esc` / `Ctrl+C` | çıkış |
+
+Ekran küçülünce düzen otomatik sadeleşir (kartlar tek sütuna iner, akvaryum kısalır).
+
+## Ayarlar
+
+İlk çalıştırmada ayar dosyası oluşur (`%AppData%\system-critters\config.json`,
+Linux/macOS'ta `~/.config/system-critters/config.json`):
+
+```json
+{ "theme": "Okyanus", "refresh_ms": 1000, "iface": "" }
+```
+
+- `theme`: Okyanus, Neon, Retro, Şeker
+- `refresh_ms`: ölçüm sıklığı (250–10000 ms)
+- `iface`: Ağ sekmesinde seçili arayüz (boş = hepsi)
 
 ## Kendine göre değiştir 🎨
 
-Dosyalar sade ve yorumlu. Hızlıca oynayabileceğin yerler:
-
-- **Balık renkleri:** `aquarium.go` → `fishPalette`
-- **Yeni balık türü:** `aquarium.go` → `fishSprite()` içine sağa/sola bakan iki
-  ASCII şekil ekle, sonra `addFish()` içindeki `rng.Intn(2)` sayısını artır.
-- **Yaratık davranışı:** `aquarium.go` → `Tank.Update()` (CPU/RAM/ağ değerlerine
-  göre hız, renk, sayı ayarlanır).
-- **Yenilenme hızı:** `model.go` → `frameRate` (animasyon) ve `statsRate` (ölçüm).
+- **Temalar / renkler:** `theme.go` → `themes`
+- **Yeni balık türü:** `aquarium.go` → `spritesRight` (sağa bakan şekli ekle; sola bakan otomatik aynalanır)
+- **Yaratık davranışı:** `aquarium.go` → `Tank.Update()`
+- **Uyarı eşikleri:** `views.go` → `alerts()`
 
 ## Kendin derlemek istersen
-
-Tüm platformlar için tek komutla binary üretir (`dist/` klasörüne):
 
 ```bash
 ./build.sh      # macOS / Linux
 ./build.ps1     # Windows (PowerShell)
 ```
 
+Çıktılar `dist/` klasörüne yazılır.
+
 ## Proje yapısı
 
 ```
-main.go        giriş noktası
-model.go       ekran düzeni ve güncelleme döngüsü
-stats.go       sistem bilgisi okuma (gopsutil)
-aquarium.go    akvaryum: balık, baloncuk, yosun
-ui.go          göstergeler, renkler, biçimlendirme
-smoke_test.go  testler
+main.go             giriş noktası
+model.go            durum, tuşlar, güncelleme döngüsü
+views.go            sekmeler ve ekran düzeni
+ui.go               göstergeler, grafikler, kutular, biçimlendirme
+theme.go            renk temaları ve gradyanlar
+config.go           ayar dosyası
+stats.go            sistem bilgisi okuma (gopsutil)
+gpu.go              NVIDIA GPU (nvidia-smi)
+battery_*.go        pil durumu (Windows / Linux)
+aquarium.go         akvaryum: balık, yengeç, yosun, yem, baloncuk
+smoke_test.go       testler
 ```
 
 ## Kullanılan kütüphaneler
@@ -110,8 +141,9 @@ smoke_test.go  testler
 
 ## Gizlilik
 
-Uygulama sistem değerlerini **yalnızca okur ve ekranda gösterir**. Hiçbir veriyi
-internete göndermez, hiçbir dosyaya kaydetmez.
+Uygulama sistem değerlerini **yalnızca okur ve ekranda gösterir**; hiçbir veriyi
+internete göndermez. Diske yalnızca iki şey yazar: tema/ayar dosyası ve (sen `e`
+tuşuna basarsan) anlık durum JSON'u.
 
 ## Lisans
 
